@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-section" class="auth-container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="main-section" class="hidden">
+        <header>
+            <h1>To-Do List</h1>
+            <button id="menu-btn">☰</button>
+        </header>
+        <nav id="sidebar" class="hidden">
+            <ul>
+                <li><a href="#" id="all-tasks-btn">All Tasks</a></li>
+                <li><a href="#" id="add-task-btn">Add Task</a></li>
+                <li><a href="#" id="logout-btn">Log Out</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <ul id="tasks-list"></ul>
+        </main>
+
+        <button id="add-task-fab">+</button>
+
+        <div id="add-task-modal" class="hidden">
+            <input type="text" id="new-task-input" placeholder="New Task">
+            <button id="cancel-btn">Cancel</button>
+            <button id="add-btn">Add</button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
